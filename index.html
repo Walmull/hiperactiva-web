@@ -105,6 +105,17 @@
       #posicionamiento h2{font-size:31px!important}
       #reels h2,#servicios h2,#activaciones h2,#nosotros h2{font-size:30px!important}
     }
+    /* Mobile hero: smaller logo, lifted so its bottom sits at ~38% of the screen, above the couple's faces.
+       Text and CTAs stay anchored at the bottom; the free space goes between logo and headline. */
+    @media (max-width:767px){
+      #inicio{--hero-logo-w:min(72vw,380px)}
+      [data-r="hero-body"]{padding-top:max(16px,calc(38svh - 76px - var(--hero-logo-w) * .46))!important}
+      [data-r="hero-logo"]{width:var(--hero-logo-w)!important;margin-bottom:auto!important}
+      [data-r="hero-h1"]{margin-top:22px}
+    }
+    @media (max-width:379px){
+      #inicio{--hero-logo-w:74vw}
+    }
     [data-r="menu"][hidden]{display:none!important}
 </style>
 <script src="config.js"></script>
@@ -366,7 +377,7 @@
       </div>
       <div style="display:flex;flex-direction:column;gap:14px">
         <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#f1f0ee;color:#0a0a0a"><div style="position:absolute;inset:0"><img src="assets/slots/equipo-tiare.webp" alt="Tiare" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div></div>
-        <div><h3 style="font-size:18px;font-weight:800;letter-spacing:-.02em;margin-bottom:4px">Tiare</h3><p style="font-size:13px;line-height:1.45;color:#3a3a3a">Operaciones / KAM / Operación Comercial</p></div>
+        <div><h3 style="font-size:18px;font-weight:800;letter-spacing:-.02em;margin-bottom:4px">Tiare</h3><p style="font-size:13px;line-height:1.45;color:#3a3a3a">Operaciones / KAM / Operación Comercial / Diseñadora gráfica</p></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px">
         <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#f1f0ee;color:#0a0a0a"><div style="position:absolute;inset:0"><img src="assets/slots/equipo-anto.webp" alt="Anto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div></div>
